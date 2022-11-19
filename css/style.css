@@ -1,0 +1,11 @@
+img {
+    object-fit: cover;
+    height: 3in;
+    width: 3in;
+}
+
+.active {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: red;
+}
