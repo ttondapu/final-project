@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html id = "master" lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +8,7 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <title>Tarang Tondapu - My Music</title>
   </head>
-  <body>
+  <body id = "body">
     <div class="skip"><a href="#main">Skip to Main Content</a></div>
     <header>
       <h1>Tarang Tondapu</h1>
@@ -18,6 +18,7 @@
           <li class = "inactive"><a href="cooking.html">Cooking</a></li>
           <li class = "active">Music</li>
         </ul>
+        <button  id = "invert">Light Mode</button>
       </nav>
     </header>
     <main id = "main">
@@ -25,16 +26,22 @@
         <h1>My Music</h1>
         <p>Something you may not know about me is that I am very interested in music and production.</p>
         <p>I was trained in classical piano outside of school, and played the flute in the school jazz band until high school.</p>
-            <img src = "images/piano.jpg" alt = "headshot">
+            <img class = "square" src = "images/piano.jpg" alt = "headshot">
         <p>After years of concerts and regional/state showcases, I decided to venture into composition and production. I started by making acoustic covers of popular songs, and soon I learned to use software such as FL Studio, a digital audio workstation.</p>
         <p>Focusing mostly on trap and RnB styles, I work with artists to provide them with instrumentals. Here's a video of me at the studio in Philadelphia, where a friend is recording over a beat I produced.</p>
-        <video class = "video" 
-			width="640" 
-			height="360" 
-			src="images/studiocook.mov">
-            <track src="captions.vtt" kind="captions" srclang="en" label="english_captions">	
+        <video class = "square" id = "video"
+          width="640" 
+          height="360" 
+          src="images/studiocook.mov">
+          <track src="captions.vtt" kind="captions" srclang="en" label="english_captions">	
         </video>
       </div>
+      <div class = "videocontrols">
+        <button  id = "play">Play</button>
+        <button  id = "mute">Mute</button>
+      </div>
+    <script src = "js/video.js"></script>
+    <script src = "js/invert.js"></script>
     </main>
     <footer>
       <a href="mailto:ttondapu@umich.edu">Contact via Email</a>

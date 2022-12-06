@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html id = "master" lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +8,7 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <title>Tarang Tondapu - My Cooking</title>
   </head>
-  <body>
+  <body id = "body">
     <div class="skip"><a href="#main">Skip to Main Content</a></div>
     <header>
       <h1>Tarang Tondapu</h1>
@@ -18,6 +18,7 @@
           <li class = "active">Cooking</li> 
           <li class = "inactive"><a href="music.html">Music</a></li>
         </ul>
+        <button  id = "invert">Light Mode</button>
       </nav>
     </header>
     <main id = "main">
@@ -27,25 +28,26 @@
             <p>Here's some of my highlights - click on an image to check out the recipe I used as a base!</p>
             </div class = "gallery">
                 <a href = "https://damndelicious.net/2019/04/21/korean-beef-bulgogi/">
-                  <img src = "images/bulgogi.jpg" alt = "beef bulgogi"></a>
+                  <img class = "square", src = "images/bulgogi.jpg" alt = "beef bulgogi"></a>
                 <a href = "https://foodcomas.com/2010/07/03/shrimp-and-tofu-pad-thai/">
-                  <img src = "images/shrimpnoodle.jpg" alt = "shrimp pad thai"></a>
+                  <img class = "square", src = "images/shrimpnoodle.jpg" alt = "shrimp pad thai"></a>
                 <a href = "https://www.bluedragon.us/recipes/thai-red-curry-chicken">
-                  <img src = "images/redcurry.jpg" alt = "red curry with rice"></a>
+                  <img class = "square", src = "images/redcurry.jpg" alt = "red curry with rice"></a>
                 <a href= "https://themodernproper.com/wild-mushroom-risotto">
-                  <img src = "images/risotto.JPG" alt = "mushroom risotto with breaded chicken"></a>
+                  <img class = "square", src = "images/risotto.JPG" alt = "mushroom risotto with breaded chicken"></a>
                 <a href = "https://www.spendwithpennies.com/creamy-mushroom-sauce/">
-                  <img src = "images/mushroompasta.jpg" alt = "mushroom cream pasta"></a>
+                  <img class = "square", src = "images/mushroompasta.jpg" alt = "mushroom cream pasta"></a>
                 <a href = "https://www.liveeatlearn.com/air-fryer-pizza/">
-                  <img src = "images/airfryerpizza.jpg" alt = "air fryer pizza with chicken and parmesan"></a>
+                  <img class = "square", src = "images/airfryerpizza.jpg" alt = "air fryer pizza with chicken and parmesan"></a>
                 <a href = https://www.barilla.com/en-us/recipes/blue-box/barilla-penne-with-fresh-lemon-and-basil>
-                  <img src = "images/garlicpasta.jpg" alt = "penne with lemon and basil"></a>
+                  <img class = "square", src = "images/garlicpasta.jpg" alt = "penne with lemon and basil"></a>
                 <a href = "https://www.indianhealthyrecipes.com/butter-chicken/">
-                  <img src = "images/butterchicken.jpg" alt = "butter chicken"></a>
+                  <img class = "square", src = "images/butterchicken.jpg" alt = "butter chicken"></a>
                 <a href = "https://bestofvegan.com/vegan-thai-green-curry-noodle-bowl/">
-                  <img src = "images/coconutsoup.jpg" alt = "coconut noodle soup"></a>
+                  <img class = "square", src = "images/coconutsoup.jpg" alt = "coconut noodle soup"></a>
             </div>
         </div>
+        <script src = "js/invert.js"></script>
     </main>
     <footer>
       <a href="mailto:ttondapu@umich.edu">Contact via Email</a>

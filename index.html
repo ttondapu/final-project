@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html id = "master" lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,8 +8,7 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <title>Tarang Tondapu - About</title>
   </head>
-  <body>
-    <!-- this needs to be tabbable and positioned  -->
+  <body id = "body">
     <div class="skip"><a href="#main">Skip to Main Content</a></div> 
     <header>
       <h1>Tarang Tondapu</h1>
@@ -19,6 +18,7 @@
           <li class = "inactive"><a href="cooking.html">Cooking</a></li>
           <li class = "inactive"><a href="music.html">Music</a></li>
         </ul>
+        <button  id = "invert">Light Mode</button>
       </nav>
     </header>
     <main id = "main">
@@ -26,23 +26,24 @@
       <span class = "container">
         <div class = "row1">
           <p>Welcome to my website! I'm Tarang, and I'm a junior at the University of Michigan.</p>
-          <img src = "images/headshot1.jpg" alt = "headshot">
-          <img src = "images/headshot2.jpg" alt = "headshot">
-          <img src = "images/headshot3.jpg" alt = "headshot">
+          <img class = "square" src = "images/headshot1.jpg" alt = "headshot">
+          <img class = "square" src = "images/headshot2.jpg" alt = "headshot">
+          <img class = "square" src = "images/headshot3.jpg" alt = "headshot">
         </div>
         <div class = "row2">
           <p>I was born and raised north of Philadelphia, where I live with my younger brother and parents.</p>
-          <img src = "images/family1.jpg" alt = "tarang and family">
-          <img src = "images/family2.jpg" alt = "tarang and family">
-          <img src = "images/family3.jpg" alt = "tarang and family">
+          <img class = "square" src = "images/family1.jpg" alt = "tarang and family">
+          <img class = "square" src = "images/family2.jpg" alt = "tarang and family">
+          <img class = "square" src = "images/family3.jpg" alt = "tarang and family">
         </div>
         <div class = "row3">
           <p>In Ann Arbor, I spend time with friends, explore the city, and watch football games in the Big House!</p>
-          <img src = "images/friends.jpg" alt = "tarang and friends">
-          <img src = "images/kayaking.jpg" alt = "tarang in a kayak">
-          <img src = "images/football.jpg" alt = "football game at night">
+          <img class = "square" src = "images/friends.jpg" alt = "tarang and friends">
+          <img class = "square" src = "images/kayaking.jpg" alt = "tarang in a kayak">
+          <img class = "square" src = "images/football.jpg" alt = "football game at night">
         </div>
       </div>
+      <script src = "js/invert.js"></script>
     </main>
     <footer>
       <a href="mailto:ttondapu@umich.edu">Contact via Email</a>

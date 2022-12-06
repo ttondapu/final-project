@@ -3,11 +3,24 @@
     top: -50px;
 }
 
+#invert {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
 /* overall colors, font, etc */
 body {
-    background-image: linear-gradient(#86b5d8, #132f43);
+    background:
+        radial-gradient(farthest-corner at bottom right,#afdbfc,#000000);
+        /* linear-gradient(#86b5d8, #132f43); */
+
     font-family: "Comic Sans MS", "Verdana", "Comic Sans", cursive;
     color: white;
+}
+
+main {
+    margin-bottom: 20px;
 }
 
 /* header and footer */
@@ -87,8 +100,6 @@ a > img:hover {
 }
 
 .row1, .row3 {
-    /* border: 2px solid white; */
-    /* padding: 2px; */
     grid-column: 3 / 6;
     text-align: right;
 } 
@@ -97,3 +108,16 @@ a > img:hover {
     grid-column: 2 / 6;
     text-align: left;
 }
+
+/* html {
+    filter: invert(1);
+} */
+
+/* 1. flex (need to implement)
+2. make the website behave differently for mobile, tab, and big
+3. 3 things above and beyond with features
+    1. video (need to add controls)
+    2. embedded links (need to implement)
+    3. hyperlinked recipes w/ opacity hover
+4. make something super accesible
+5. WRITEUP on everything above */
