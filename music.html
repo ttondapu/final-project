@@ -13,32 +13,28 @@
     <header>
       <h1>Tarang Tondapu</h1>
       <nav id = "menubar">
-        <ul>
-          <li class = "inactive"><a href="index.html">About</a></li>
-          <li class = "inactive"><a href="cooking.html">Cooking</a></li>
-          <li class = "active">Music</li>
-        </ul>
+        <a class = "inactive" href="index.html"><span>About</span></a>
+        <a class = "inactive" href="cooking.html"><span>Cooking</span></a>
+        <a class = "active" href="music.html"><span>Music</span></a>
         <button id = "invert">Light Mode</button>
       </nav>
     </header>
     <main id = "main">
-      <div class = "introduction">
-        <h1>My Music</h1>
-        <p>Something you may not know about me is that I am very interested in music and production.</p>
-        <p>I was trained in classical piano outside of school, and played the flute in the school jazz band until high school.</p>
-            <img class = "square" src = "images/piano.jpg" alt = "headshot">
-        <p>After years of concerts and regional/state showcases, I decided to venture into composition and production. I started by making acoustic covers of popular songs, and soon I learned to use software such as FL Studio, a digital audio workstation.</p>
-        <p>Focusing mostly on trap and RnB styles, I work with artists to provide them with instrumentals. Here's a video of me at the studio in Philadelphia, where a friend is recording over a beat I produced.</p>
-        <video class = "square" id = "video"
-          width="640" 
-          height="360" 
-          src="images/studiocook.mov">
-          <track src="captions.vtt" kind="captions" srclang="en" label="english_captions">	
-        </video>
+      <h1>My Music</h1>
+      <div class = "solo"><img src = "images/piano.jpg" alt = "headshot"></div>
+      <div class = "intro">
+        <p>Something you may not know about me is that I am very interested in music and production. I was trained in classical piano outside of school, and played the flute in the school jazz band until high school. After years of concerts and regional/state showcases, I decided to venture into composition and production. I started by making acoustic covers of popular songs, and soon I learned to use software such as FL Studio, a digital audio workstation. Focusing mostly on trap and RnB styles, I work with artists to provide them with instrumentals. Here's a video of me at the studio in Philadelphia, where a friend is recording over a beat I produced.</p>
       </div>
+
+      <video id = "video"
+        width="640" 
+        height="360" 
+        src="images/studiocook.mov">
+        <track src="captions.vtt" kind="captions" srclang="en" label="english_captions">	
+      </video>
       <div class = "videocontrols">
         <button id = "play">Play</button>
-        <button id = "mute">Mute</button>
+          <button id = "mute">Mute</button>
       </div>
     <script src = "js/video.js"></script>
     <script src = "js/invert.js"></script>

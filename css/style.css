@@ -1,3 +1,4 @@
+/* mobile view styling */
 .skip{
     position: absolute;
     top: -50px;
@@ -17,59 +18,59 @@ body {
     color: white;
 }
 
-main {
-    margin-bottom: 20px;
-}
-
 /* header and footer */
 header, footer {
     text-align: center;
     color: white;
 }
 
+/* header footer styling */
 header a, footer a {
     text-decoration: none;
     color: white;
 }
 
+/* linkedin and email hover */
 footer a:hover {
     opacity: 0.5;
     text-transform: uppercase;
 }
 
-/* nav */
-nav ul {
-    align-self: center;
+/* nav element */
+nav {
+    width: 50%;
+    margin: auto;
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
 }
 
-nav li {
-    box-sizing: border-box;
-    padding: 5px;
-    width: 33%;
-    border: 2px solid white;
-    border-radius: 5px;
-    display: inline;
-}
-
-nav li.inactive:hover {
-    opacity: 0.5;
-}
-
+/* nav item container */
 nav a {
-    text-decoration: none;
-    display: block;
-    color: white;
+    padding: 5px;
+    border: 2px solid white;
+    box-sizing: border-box;
+    min-width: fit-content;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    border-radius: 5px;
+    text-align: center;
 }
 
-nav li.active {
-    border: 5px solid white;
-    background-color: white;
+/* nav span items */
+nav a span {
+    text-align: center;
+}
+
+nav a.active {
     color: black;
-    font-weight: bold;
-    text-transform: uppercase;
-    text-decoration: underline;
+    background-color: white;
+}
+
+/* nav item hover */
+nav span.inactive:hover {
+    opacity: 0.5;
 }
 
 /* page title */
@@ -77,34 +78,41 @@ h1 {
     text-align: center;
 }
 
-/* home page grid */
+/* image styling */
 img {
-    height: 3in;
-    width: 3in;
+    height: 1.5in;
+    width: 1.5in;
     object-fit: cover;
     border: 2px solid white;
     border-radius: 10px;
 }
 
+/* hover over linked images */
 a > img:hover {
     opacity: 0.5;
     transition: 0.5s ease;
 }
 
+/* define container */
 .container {
     display: grid;
     grid-template-columns: 1fr 2fr 2fr 2fr 2fr 1fr;
     grid-template-rows: auto;
 }
 
-.row1, .row3 {
-    grid-column: 3 / 6;
-    text-align: right;
+/* all rows should span across all available non-edge rows */
+.row1, .row2, .row3 {
+    grid-column: 2 / -2;
+    text-align: center;
 } 
 
-.row2 {
-    grid-column: 2 / 6;
-    text-align: left;
+.gallery {
+    width: 90%;
+    margin: auto;
+}
+
+.cookrow1, .cookrow2, .cookrow3 {
+    display: inline;
 }
 
 /* invert colors button */
@@ -114,16 +122,117 @@ button {
     border-radius: 5px;
     color: white;
     text-align: center;
-    display: inline-block;
+    width: fit-content;
     font-size: 16px;
     font-family: "Comic Sans MS", "Verdana", "Comic Sans", cursive;
 }
 
-/* 1. flex (need to implement)
-2. make the website behave differently for mobile, tab, and big
-3. 3 things above and beyond with features
-    1. video (need to add controls)
-    2. embedded links (need to implement)
-    3. hyperlinked recipes w/ opacity hover
-4. make something super accesible
-5. WRITEUP on everything above */
+/* button hover styling */
+button:hover {
+    opacity: 0.5;
+}
+
+#video, .solo {
+    width: 100%;
+    margin: 15px;
+    display: flex;
+    justify-content: space-evenly;
+} 
+
+.videocontrols{
+    width: 25%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+.videocontrols button {
+    min-width: max-content;
+    max-width: max-content;
+}
+/* first breakpoint for tablet size */
+@media screen and (min-width: 489px) {
+    /* change nav to horizontal */
+    nav {
+        flex-direction: row;
+    }
+
+    /* enlarge image squares */
+    img {
+        height: 2in;
+        width: 2in;
+        object-fit: cover;
+        border: 2px solid white;
+        border-radius: 10px;
+    }
+}
+
+/* second breakpoint for desktop */
+@media screen and (min-width: 768px) {
+
+    /* margin for larger views */
+    main {
+        margin-bottom: 20px;
+    }
+
+    /* enlarge images yet again */
+    img {
+        height: 3in;
+        width: 3in;
+        object-fit: cover;
+        border: 2px solid white;
+        border-radius: 10px;
+    }
+
+    /* change grid span of alternating rows */
+    .row1, .row3 {
+        grid-column: 3 / 6;
+        text-align: right;
+    } 
+
+    .row2 {
+        grid-column: 2 / 6;
+        text-align: left;
+    }
+
+    /* cooking page gallery - enlarged */
+    .gallery img{
+        width: 2.5in;
+        height: 2.5in;
+        object-fit: contain;
+        margin: 0;
+        max-width: 100%;
+    }
+
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(7, 1.5in);
+        grid-template-rows: auto;
+        gap: 0;
+        overflow: scroll;
+    }
+
+    .cookrow1 {
+        width: max-content;
+        grid-column: 2/-1;
+        grid-row: 1;
+    }
+
+    .cookrow2 {
+        width: max-content;
+        grid-column: 3/-1;
+        grid-row: 2;
+    }
+
+    .cookrow3 {
+        width: max-content;
+        grid-column: 4/-1;
+        grid-row: 3;
+    }
+
+    .intro{
+        display: flex;
+        width: 75%;
+        margin: auto;
+        text-align: center;
+    }
+}
