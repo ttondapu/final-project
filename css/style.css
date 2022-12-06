@@ -11,10 +11,8 @@
 
 /* overall colors, font, etc */
 body {
-    background:
-        radial-gradient(farthest-corner at bottom right,#afdbfc,#000000);
-        /* linear-gradient(#86b5d8, #132f43); */
-
+    background: radial-gradient(farthest-corner at bottom right,#86ACCB,#000000);
+    background-color: #000000;
     font-family: "Comic Sans MS", "Verdana", "Comic Sans", cursive;
     color: white;
 }
@@ -37,7 +35,6 @@ header a, footer a {
 footer a:hover {
     opacity: 0.5;
     text-transform: uppercase;
-    color: red;
 }
 
 /* nav */
@@ -79,6 +76,7 @@ nav li.active {
 h1 {
     text-align: center;
 }
+
 /* home page grid */
 img {
     height: 3in;
