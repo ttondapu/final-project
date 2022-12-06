@@ -6,7 +6,7 @@
 /* overall colors, font, etc */
 body {
     background-image: linear-gradient(#86b5d8, #132f43);
-    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    font-family: "Comic Sans MS", "Verdana", "Comic Sans", cursive;
     color: white;
 }
 
@@ -29,6 +29,7 @@ footer a:hover {
 
 /* nav */
 nav ul {
+    align-self: center;
     display: flex;
     justify-content: space-evenly;
 }
@@ -38,10 +39,11 @@ nav li {
     padding: 5px;
     width: 33%;
     border: 2px solid white;
+    border-radius: 5px;
     display: inline;
 }
 
-nav li:hover {
+nav li.inactive:hover {
     opacity: 0.5;
 }
 
@@ -52,12 +54,12 @@ nav a {
 }
 
 nav li.active {
+    border: 5px solid white;
+    background-color: white;
+    color: black;
     font-weight: bold;
     text-transform: uppercase;
-    color: black;
-    border: 5px solid white;
-    fill: white;
-    background-color: white;
+    text-decoration: underline;
 }
 
 /* page title */
@@ -70,9 +72,10 @@ img {
     width: 3in;
     object-fit: cover;
     border: 2px solid white;
+    border-radius: 10px;
 }
 
-img:hover {
+a > img:hover {
     opacity: 0.5;
     transition: 0.5s ease;
 }
@@ -84,6 +87,8 @@ img:hover {
 }
 
 .row1, .row3 {
+    /* border: 2px solid white; */
+    /* padding: 2px; */
     grid-column: 3 / 6;
     text-align: right;
 } 
