@@ -10,12 +10,24 @@ body {
     color: white;
 }
 
-/* header and footer are centered */
+/* header and footer */
 header, footer {
     text-align: center;
+    color: white;
 }
 
-/* nav bar styling */
+header a, footer a {
+    text-decoration: none;
+    color: white;
+}
+
+footer a:hover {
+    opacity: 0.5;
+    text-transform: uppercase;
+    color: red;
+}
+
+/* nav */
 nav ul {
     display: flex;
     justify-content: space-evenly;
@@ -29,17 +41,23 @@ nav li {
     display: inline;
 }
 
+nav li:hover {
+    opacity: 0.5;
+}
+
 nav a {
     text-decoration: none;
     display: block;
     color: white;
 }
 
-nav .active {
+nav li.active {
     font-weight: bold;
     text-transform: uppercase;
-    color: red;
-    border: 5px solid red;
+    color: black;
+    border: 5px solid white;
+    fill: white;
+    background-color: white;
 }
 
 /* page title */
@@ -52,6 +70,11 @@ img {
     width: 3in;
     object-fit: cover;
     border: 2px solid white;
+}
+
+img:hover {
+    opacity: 0.5;
+    transition: 0.5s ease;
 }
 
 .container {
