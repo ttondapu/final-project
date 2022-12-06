@@ -109,9 +109,17 @@ a > img:hover {
     text-align: left;
 }
 
-/* html {
-    filter: invert(1);
-} */
+/* invert colors button */
+#invert {
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    font-family: "Comic Sans MS", "Verdana", "Comic Sans", cursive;
+}
 
 /* 1. flex (need to implement)
 2. make the website behave differently for mobile, tab, and big
