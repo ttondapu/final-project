@@ -110,7 +110,7 @@ a > img:hover {
 }
 
 /* invert colors button */
-#invert {
+button {
     background-color: transparent;
     border: 2px solid white;
     border-radius: 5px;

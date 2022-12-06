@@ -2,13 +2,11 @@ var video;
 
 // load page
 window.addEventListener("load", function() {
-	console.log("Good job opening the window")
 	video = this.document.getElementById("video")
 	video.autoplay=false
 	video.loop = false
 	video.load();
 })
-
 // play button
 document.querySelector("#play").addEventListener("click", function() {
 	video = document.getElementById("video")
@@ -27,7 +25,7 @@ document.querySelector("#mute").addEventListener("click", function() {
 	video = document.getElementById("video")
 	if (!video.muted) {
 		video.muted = true
-		document.getElementById("mute").innerHTML = "nmute"
+		document.getElementById("mute").innerHTML = "Unmute"
 	}
 	else {
 		video.muted = false
