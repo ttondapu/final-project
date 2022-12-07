@@ -180,7 +180,7 @@ button:hover, button:focus {
 }
 
 /* second breakpoint for desktop */
-@media screen and (min-width: 770px) {
+@media screen and (min-width: 982px) {
 
     /* margin for larger views */
     main {
