@@ -6,15 +6,24 @@ p {
     font-size: 1em;
 }
 
-.skip{
+.skip a{
+    color: white;
     position: absolute;
     top: -50px;
+    left: 0px;
+    opacity: 0;
+}
+
+.skip a:focus {
+    opacity: 1;
+    top: 5px;
+    left: 5px;
 }
 
 #invert {
     position: absolute;
     top: 0;
-    left: 0;
+    right: 0;
 }
 
 /* overall colors, font, etc */
@@ -35,12 +44,6 @@ header, footer {
 header a, footer a {
     text-decoration: none;
     color: white;
-}
-
-/* linkedin and email hover */
-footer a:hover {
-    opacity: 0.5;
-    text-transform: uppercase;
 }
 
 /* nav element */
@@ -78,11 +81,6 @@ nav a.active {
     font-weight: bold;
 }
 
-/* nav item hover */
-nav a.inactive:hover {
-    opacity: 0.5;
-}
-
 /* page title */
 h1 {
     margin-bottom:1em;
@@ -101,10 +99,12 @@ img {
 }
 
 /* hover over linked images */
-a > img:hover {
+a > img:hover, a:focus, a:hover {
     opacity: 0.5;
     transition: 0.5s ease;
+    text-transform: uppercase;
 }
+
 
 /* define container */
 .container {
@@ -141,7 +141,7 @@ button {
 }
 
 /* button hover styling */
-button:hover {
+button:hover, button:focus {
     opacity: 0.5;
 }
 
@@ -163,7 +163,7 @@ button:hover {
     max-width: max-content;
 }
 /* first breakpoint for tablet size */
-@media screen and (min-width: 489px) {
+@media screen and (min-width: 485px) {
     /* change nav to horizontal */
     nav {
         flex-direction: row;
@@ -180,7 +180,7 @@ button:hover {
 }
 
 /* second breakpoint for desktop */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 770px) {
 
     /* margin for larger views */
     main {
