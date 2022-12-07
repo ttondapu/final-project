@@ -66,10 +66,13 @@ nav a span {
 nav a.active {
     color: black;
     background-color: white;
+    text-transform: uppercase;
+    text-decoration: underline;
+    font-weight: bold;
 }
 
 /* nav item hover */
-nav span.inactive:hover {
+nav a.inactive:hover {
     opacity: 0.5;
 }
 
@@ -137,7 +140,7 @@ button:hover {
     margin: 15px;
     display: flex;
     justify-content: space-evenly;
-} 
+}
 
 .videocontrols{
     width: 25%;
