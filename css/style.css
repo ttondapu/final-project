@@ -1,4 +1,11 @@
 /* mobile view styling */
+
+p {
+    margin-bottom:1em;
+    margin-top: 1em;
+    font-size: 1em;
+}
+
 .skip{
     position: absolute;
     top: -50px;
@@ -78,7 +85,10 @@ nav a.inactive:hover {
 
 /* page title */
 h1 {
+    margin-bottom:1em;
+    margin-top: 1em;
     text-align: center;
+    font-size: 2em;
 }
 
 /* image styling */
